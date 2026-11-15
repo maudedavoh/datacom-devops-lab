@@ -1,0 +1,19 @@
+
+name: My First Datacom Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display welcome message
+        run: echo "Hello from my Datacom DevOps lab!"
+
+      - name: Display completion message
+        run: echo "My first GitHub Actions workflow is running successfully!"
